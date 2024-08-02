@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if ! gem list --installed --exact "shale" > /dev/null; then
+  echo "Installing Shale..."
+  gem install shale
+fi
+
+ruby generate.rb
+
+exec irb -r ./boot.rb

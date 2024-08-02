@@ -1,0 +1,8 @@
+{
+  "color": "red",
+  "features": ["power steering", "automatic windows"],
+  "options": [
+    {"name": "leather seats", "value": "black", "cost": 2000},
+    {"name": "stereo system", "value": "Bose", "cost": 1000}
+  ]
+}

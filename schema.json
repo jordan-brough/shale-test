@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": ["color"],
+
+  "properties": {
+    "color": { "type": "string" },
+
+    "features": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "value", "cost"],
+        "properties": {
+          "name": { "type": "string" },
+          "value": { "type": "string" },
+          "cost": { "type": "number" }
+        }
+      }
+    }
+  }
+}
